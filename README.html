@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css">
+<link rel="stylesheet" href="file:////home/andre/.vscode/extensions/goessner.mdmath-2.7.4/themes/default/style.css">
+
+</head>
+<body class="markdown-body">
+<h1 id="pirandomopenmp">piRandomOpenMP</h1>
+<p>project for HPCI</p>
+<h2 id="sizestxt"><code>sizes.txt</code></h2>
+<p>Este archivo contiene el número de puntos a generar y lo hilos asociados a ellos. Puede modificarlos acorde al formato sin borrar la cabecera</p>
+<h2 id="formato-de-salida">Formato de salida</h2>
+<p>En el archivo <code>main.cpp</code> tenemos múltiples salidas para poder llenar los archivos de datos que guardan los resultados: <code>resultadosseq.data</code>, <code>resultadospar.data</code>, <code>pi.data</code> y <code>aceleracion.data</code>.</p>
+<h2 id="resultados">Resultados</h2>
+<ol>
+<li>
+<p><code>resultadosseq.data</code> contiene el número de puntos generados y el tiempo que le tomó de manera secuencial calcular <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span></eq>.</p>
+</li>
+<li>
+<p><code>resultadospar.data</code> contiene para un número de puntos generados, el número de hilos y su tiempo de ejecución.</p>
+</li>
+<li>
+<p><code>pi.data</code> los valores de pi calculados para un número de puntos generados con su número de hilos.</p>
+</li>
+<li>
+<p><code>aceleracion.data</code> tiene para el número de puntos generados y el número de hilos se asocia el tiempo de ejecución en secuencial entre el tiempo de ejecución paralelo.</p>
+</li>
+</ol>
+<h2 id="ejecucic3b3n">Ejecución</h2>
+<p>Correr el script <code>runWithSizes.sh</code> para generar resultados usando sizes.txt.</p>
+
+</body>
+</html>
